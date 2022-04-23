@@ -1,0 +1,472 @@
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+red */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+/* ============ HEADER ========================= */
+header {
+  background-color: #eac926;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 50%;
+}
+
+.find-input {
+  display: block;
+  width: 50%;
+}
+
+.find-input button {
+  height: 100%;
+  padding: 5px;
+}
+
+.find-input i {
+  color: #666;
+}
+
+header p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+div.burger-menu {
+  text-align: center;
+}
+
+div.burger-menu i {
+  background-color: #1259c3;
+  justify-content: center;
+  border-radius: 5px;
+  color: white;
+  height: 40px;
+  margin: 10px 0px 20px 0px;
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+}
+
+/* =============== LOGIN NAVBAR ===================== */
+
+.login-navbar {
+  display: none;
+}
+
+/* =============== BANNER ===================== */
+.banner {
+  display: flex;
+  min-height: 10%;
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ================ MAIN =================== */
+
+/* main {
+  width: 90%;
+} */
+
+/* ========== SECTION CONTAINER ========== */
+
+.section-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section-container h2 {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.article-container {
+  background-color: white;
+  margin: 20px 10px;
+}
+
+.article-container img {
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#truck {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  color: #39b54a;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: -15px;
+  margin-left: 70%;
+}
+
+.logo-price-discount-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1px solid #ebebeb;
+}
+
+.price-discount-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.price {
+  width: 40%;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.discount {
+  width: 40%;
+  font-size: 16px;
+  color: #39b54a;
+  margin: 10px 0;
+  text-align: right;
+}
+
+.descriptions {
+  display: none;
+}
+
+.descriptions p {
+  width: 100%;
+  font-size: 16px;
+  padding: 20px;
+  color: #666;
+}
+
+/* ================ FOOTER ================ */
+footer {
+  height: auto;
+  text-align: center;
+  font-size: 2vw;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-information {
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.copy-right {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+footer i {
+  color: #1259c3;
+  font-size: 2em;
+}
+
+/* ============== REGISTER FORM ======================= */
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebebeb;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10px;
+  border: 1px solid #ebebeb;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+input:required {
+  border: 2px solid red;
+}
+
+input:required:valid {
+  border: 2px solid rgb(3, 209, 3);
+}
+
+.input-text {
+  margin-top: 20px;
+  width: 80%;
+  height: 5vw;
+  font-size: 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.input-date {
+  width: 80%;
+  padding-top: 20px;
+}
+
+.input-date label {
+  padding-left: 10px;
+  display: block;
+}
+
+.input-date input {
+  margin-top: 20px;
+  width: 100%;
+  height: 5vw;
+  font-size: 16px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.question {
+  padding: 0px 10px;
+  width: 80%;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.question label {
+  font-size: 16px;
+  padding-right: 10px;
+  padding-left: 4px;
+}
+
+.interests {
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  width: 80%;
+  font-size: 16px;
+}
+
+.interest-label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: 80%;
+  font-size: 16px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.photo {
+  width: 80%;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.adjunto {
+  width: 80%;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.form-button {
+  color: white;
+  background-color: #1259c3;
+  width: 80%;
+  border: none;
+  border-radius: 2px;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #1259c3;
+  border-radius: 5px;
+}
+
+.form-button:hover {
+  background-color: #0022aa;
+  cursor: pointer;
+}
+
+/* ============== LOGIN FORM ======================= */
+
+.login-button {
+  color: white;
+  background-color: #1259c3;
+  width: 80%;
+  border: none;
+  border-radius: 2px;
+  padding: 8px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 1px solid #1259c3;
+  border-radius: 5px;
+}
+
+.login-button:hover {
+  background-color: #0022aa;
+  cursor: pointer;
+}
+
+/* ==================== TABLET NAVIGATION =========================== */
+@media (min-width: 361px) {
+  .login-navbar {
+    display: contents;
+  }
+
+  .login-navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .login-navbar ul li a:hover {
+    color: #666;
+  }
+
+  .descriptions {
+    display: contents;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .section-container {
+    flex-direction: row;
+  }
+
+  .article-container {
+    width: 44%;
+    margin: 1% 1%;
+  }
+
+  .descriptions p {
+    padding: 4%;
+  }
+
+  .descriptions {
+    display: none;
+  }
+
+  .article-container:hover .descriptions {
+    display: block;
+    transition: all 400ms ease-in-out;
+  }
+
+  .article-container:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: all 600ms;
+    cursor: pointer;
+  }
+
+  .article-container:hover #truck {
+    transform: rotate(-90deg);
+    transition: all 600ms;
+  }
+}
+
+/* ================== DESKTOP NAVIGATION =================== */
+@media (min-width: 769px) {
+  h2 {
+    font-size: 1em;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .section-container {
+    justify-content: space-around;
+  }
+
+  .article-container {
+    width: 22%;
+    margin: 1% 1%;
+  }
+
+  .price-discount-container p {
+    font-size: 14px;
+  }
+
+  .find-input {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .find-input input {
+    width: 70%;
+    margin-right: 10px;
+  }
+
+  /* ==================== FOOTER ================= */
+
+  .footer-information {
+    width: 30%;
+  }
+}
